@@ -1,0 +1,36 @@
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .tooltip-box {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px;
+    background-color: #0057ff;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 10;
+    white-space: normal;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tooltip-box::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0057ff transparent transparent transparent;
+  }
+  
